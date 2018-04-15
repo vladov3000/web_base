@@ -3,7 +3,7 @@ MAINTAINER vladov3000@gmail.com
 
 RUN echo "0.1" > /version
 
-VOLUME /web3 
+VOLUME /web_base 
 
 #update your droplet
 RUN apt-get update
@@ -29,6 +29,6 @@ ENV PATH="/node_modules/stylus/bin:${PATH}"
 
 #website works on port 3000 inside the container
 EXPOSE 3000
-WORKDIR /web3
+WORKDIR /web_base
 #code runs when we start container
 ENTRYPOINT ["npm", "run","watch"]

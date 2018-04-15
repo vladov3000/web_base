@@ -1,2 +1,2 @@
 #!/bin/bash
-docker build . -t web3
+docker build . -t web_base
